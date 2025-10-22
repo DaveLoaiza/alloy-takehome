@@ -35,11 +35,6 @@ alloy-application-demo/
 
 ### Step 1: Clone the Repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/alloy-application-demo.git
-cd alloy-application-demo
-```
-
 ### Step 2: Set Up the Backend
 
 1. Navigate to the backend directory:
