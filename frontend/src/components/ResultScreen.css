@@ -1,0 +1,136 @@
+.result-container {
+  width: 100%;
+  max-width: 600px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.result-card {
+  background: white;
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.result-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.result-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.success .result-title {
+  color: #10b981;
+}
+
+.review .result-title {
+  color: #f59e0b;
+}
+
+.denied .result-title,
+.error .result-title {
+  color: #ef4444;
+}
+
+.result-message {
+  font-size: 1.3rem;
+  color: #1f2937;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.result-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.result-actions button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-application-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.new-application-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.result-footer {
+  border-top: 2px solid #f3f4f6;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.result-footer p {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .result-card {
+    padding: 35px 25px;
+  }
+
+  .result-icon {
+    font-size: 4rem;
+  }
+
+  .result-title {
+    font-size: 2rem;
+  }
+
+  .result-message {
+    font-size: 1.1rem;
+  }
+
+  .result-subtitle {
+    font-size: 0.95rem;
+  }
+}
